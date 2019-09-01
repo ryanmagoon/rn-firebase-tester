@@ -1,5 +1,12 @@
-import React, { Component } from 'react'
-import { Platform, StyleSheet, Text, View } from 'react-native'
+import React, { Component, useState } from 'react'
+import {
+  Platform,
+  StyleSheet,
+  Text,
+  View,
+  TextInput,
+  Button
+} from 'react-native'
 
 import firebase from '@react-native-firebase/app'
 import '@react-native-firebase/auth'
@@ -11,21 +18,25 @@ import '@react-native-firebase/auth'
 //    3) import the package here in your JavaScript code: `import '@react-native-firebase/auth';`
 //    4) The Firebase Auth service is now available to use here: `firebase.auth().currentUser`
 
-export default class App extends Component {
-  render() {
-    return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>Welcome to React Native + Firebase!</Text>
-        <Text style={styles.instructions}>To get started, edit App.js</Text>
-        <Text style={styles.instructions}>{instructions}</Text>
-        {!firebase.apps.length && (
-          <Text style={styles.instructions}>
-            {`\nYou currently have no Firebase apps registered, this most likely means you've not downloaded your project credentials. Visit the link below to learn more. \n\n ${firebaseCredentials}`}
-          </Text>
-        )}
-      </View>
-    )
+const App = () => {
+  const [email, setEmail] = useState('')
+  const [password, setPassword] = useState('')
+
+  const handleLogin = () => {
+    console.table(email, password)
   }
+
+  return (
+    <View style={styles.container}>
+      <TextInput value={email} onChangeText={setEmail} placeholder="email" />
+      <TextInput
+        value={password}
+        onChangeText={setPassword}
+        placeholder="password"
+      />
+      <Button title="Login" onPress={handleLogin} />
+    </View>
+  )
 }
 
 const styles = StyleSheet.create({
@@ -46,3 +57,5 @@ const styles = StyleSheet.create({
     marginBottom: 5
   }
 })
+
+export default App
