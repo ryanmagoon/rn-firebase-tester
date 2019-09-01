@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* rnfirebasetestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* rnfirebasetestTests.m */; };
+		0AEE93FC231B62B2006C8A37 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0AEE93FB231B62B2006C8A37 /* GoogleService-Info.plist */; };
 		0CFBB95E6336EBB46A9D14DE /* libPods-rnfirebasetestTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F5983B79816F3F5819204ACC /* libPods-rnfirebasetestTests.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
@@ -44,6 +45,7 @@
 		00E356EE1AD99517003FC87E /* rnfirebasetestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = rnfirebasetestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* rnfirebasetestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = rnfirebasetestTests.m; sourceTree = "<group>"; };
+		0AEE93FB231B62B2006C8A37 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		11FF176CE795D00884DE7727 /* Pods-rnfirebasetest-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rnfirebasetest-tvOS.release.xcconfig"; path = "Target Support Files/Pods-rnfirebasetest-tvOS/Pods-rnfirebasetest-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* rnfirebasetest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rnfirebasetest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = rnfirebasetest/AppDelegate.h; sourceTree = "<group>"; };
@@ -159,6 +161,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				0AEE93FB231B62B2006C8A37 /* GoogleService-Info.plist */,
 				13B07FAE1A68108700A75B9A /* rnfirebasetest */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* rnfirebasetestTests */,
@@ -194,7 +197,6 @@
 				B7698A337E0F4FD13B720548 /* Pods-rnfirebasetestTests.debug.xcconfig */,
 				1E9495692A20E3E857CAB500 /* Pods-rnfirebasetestTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -309,6 +311,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -339,6 +342,7 @@
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
+				0AEE93FC231B62B2006C8A37 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
